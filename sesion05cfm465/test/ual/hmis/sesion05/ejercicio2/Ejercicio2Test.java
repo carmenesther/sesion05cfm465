@@ -12,8 +12,8 @@ public class Ejercicio2Test {
 	public void testLoginCaso1(){
 		// 1. Arrange
 		Ejercicio2 e1 = new Ejercicio2();
-		String user = "carmen";
-		String pass = "12345";
+		String user = "user";
+		String pass = "pass";
 		// 2. Act
 		boolean resultado = e1.login(user,pass);
 		// 3. Assert

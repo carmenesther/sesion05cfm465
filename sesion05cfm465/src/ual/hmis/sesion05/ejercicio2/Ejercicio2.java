@@ -14,6 +14,9 @@ public class Ejercicio2 {
 
 	public boolean compruebaLoginEnBD(String username, String password) {
 		//mock
-		return true;
+		if(username=="user"&& password=="pass")
+			return true;
+		else 
+		return false;
 	}
 }
