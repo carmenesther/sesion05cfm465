@@ -16,7 +16,7 @@ public class Ejercicio2 {
 		//mock
 		if(username=="user"&& password=="pass")
 			return true;
-		else 
+		else
 		return false;
 	}
 }

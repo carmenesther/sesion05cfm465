@@ -2,16 +2,26 @@ package ual.hmis.sesion05.ejercicio5;
 
 public class Ejercicio5 {
 	public String subcadenaHastaPunto (String cadena) {
-		cadena = "";
+		int posicion;
+		boolean comprobar=false;
+		String resultado = "";
 		if(!cadena.contains(".")){
-			cadena = "Error: cadena sin punto";
-		}
-		char c = '0';
-		if(cadena.equals(Character.isDigit(c))){
-			cadena = "Error: cadena con dígito";
-		}
-		return cadena;
+			resultado = "Error: cadena sin punto";
+		} else {
+			posicion=cadena.indexOf(".");
+			cadena=cadena.substring(0, posicion+1);
+			char[] c = cadena.toCharArray();
+			for (int i = 0; i < cadena.length()-1; i++) {
+				comprobar=Character.isDigit(c[i]);
+			}
+			if(comprobar){
+				resultado = "Error: cadena con digito";
+			} else {
+				resultado = cadena;
+			}
 	}
+	return resultado;
+}
 
 
 }
