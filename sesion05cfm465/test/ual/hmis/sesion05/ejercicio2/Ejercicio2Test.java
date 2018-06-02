@@ -63,4 +63,15 @@ public class Ejercicio2Test {
 		// 3. Assert
 		assertEquals(false,resultado);
 	}
+	@Test
+	public void testLoginCaso6(){
+		// 1. Arrange
+		Ejercicio2 e1 = new Ejercicio2();
+		String user = "Hola";
+		String pass = "Hola";
+		// 2. Act
+		boolean resultado = e1.login(user,pass);
+		// 3. Assert
+		assertEquals(false,resultado);
+	}
 }

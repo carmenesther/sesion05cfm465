@@ -21,6 +21,13 @@ public class Ejercicio3Test {
 		assertEquals("**", resultado);
 	}
 	@Test
+	public void testCadenaAsteriscos5() {
+		Ejercicio3 e3 = new Ejercicio3();
+		int num = 5;
+		String resultado = e3.cadenaAsteriscos(num);
+		assertEquals("*****", resultado);
+	}
+	@Test
 	public void testCadenaAsteriscos() {
 		Ejercicio3 e3 = new Ejercicio3();
 		int num = 0;

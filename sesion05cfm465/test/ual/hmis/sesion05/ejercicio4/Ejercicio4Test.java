@@ -30,4 +30,12 @@ public class Ejercicio4Test {
 		String res = e4.cadena(p1, p2);
 		assertEquals("", res);
 	}
+	@Test
+	public void testPrimeraCadenaVacia() {
+		Ejercicio4 e4 = new Ejercicio4();
+		String p1 = "";
+		String p2 = "holi";
+		String res = e4.cadena(p1, p2);
+		assertEquals("", res);
+	}
 }
