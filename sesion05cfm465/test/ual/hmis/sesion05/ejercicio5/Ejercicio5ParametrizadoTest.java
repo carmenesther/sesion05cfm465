@@ -31,8 +31,8 @@ public class Ejercicio5ParametrizadoTest {
 	public static Collection<Object[]> addedNumbers(){
 		return Arrays.asList(new Object[][]{
 			{"Mayor de edad","Error: cadena sin punto"},
-			{"Menor. De edad 3","Menor."},
-			{"Edad 3. años","Error: cadena con algun numero"},
+			{"Edad 3. años","Error: cadena con digito"},
+			{"Menor. De Edad","Menor."},
 
 		});
 	}
